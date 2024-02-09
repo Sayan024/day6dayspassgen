@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0) ;
+    color: aliceblue;
+    font-family: helvetica;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    margin: 12%;
+    width: 700px;
+    height: 40vh;
+    background-color: rgba(1, 36, 66, 0.406);
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    border: 1px solid rgb(153, 207, 255);
+    box-shadow: 0 0 100px 20px rgba(0, 136, 255, 0.658);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation-name: borderanime;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes borderanime {
+    0%{
+        border:0%;
+    }
+    100%{
+        border: 100%;
+    }
+}
+#cpy{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -5px;
+    transition: all 500ms ease;
+
+}
+#cpy:hover{
+    transform: scale(0.8);
+}
+#password{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0px 35px 0 10px;
+    border: none;
+    transform: scale(1.1)
+}
+.display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    position: relative;
+}
+input:focus{
+    outline: 2px solid #2196F3;
+} 
+#genbtn{
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+#gen{
+    width: 20px;
+    height: 20px;
+}
+#cpy{
+    transform: scale(1.1);
+}
+#genbtn:hover{
+    box-shadow: 10px 10px 10px rgb(0, 25, 46) ;
+    transform: scale(1.1);
+}
+#abc{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 40px;
+    left: 234px;
+}
+.gnbt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+#lenbox{
+    margin-top: 30px;
+    width: 200px;
+    height: 38px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all .5s ease;
+    padding-left: 40px;
+    padding-right: 15px;
+    margin-left: 40px;
+}
+h1{
+    font-size: 30px;
+}
